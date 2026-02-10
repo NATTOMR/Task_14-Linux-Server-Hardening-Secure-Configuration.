@@ -45,58 +45,67 @@ This project covers:
 ## 🔍 Step-by-Step Implementation
 
 ---
+## What Is Server Hardening?
+Server hardening means protecting your Linux server by reducing its vulnerability surface. It’s like locking every door and window of your house before you go on vacation. You remove unnecessary services, close open ports, and implement security best practices to ensure your server stays safe from intruders.
 
-### 1️⃣ Review Default System Settings
+## Why It Matters?
+Even though Linux is considered more secure than many other operating systems, it’s not immune to attacks. Poor configurations, outdated software, or weak passwords can make your server an easy target.
+
+
+## 1️⃣ Review Default System Settings
 Understand the system before making changes.
 
-```bash
-# Check OS version
-lsb_release -a
+``bash
+### Check OS version
+` lsb_release -a`
 
-# List users
-cut -d: -f1 /etc/passwd
+### List users
+`cut -d: -f1 /etc/passwd`
 
-# List running services
-systemctl list-units --type=service
+### List running services
+`systemctl list-units --type=service`
 
-# Check open ports
-ss -tuln
-2️⃣ User Account Hardening
+### Check open ports
+`ss -tuln`
 
-Remove unused users and restrict privileges.
+## 2️⃣ User Account Hardening
 
-# Delete unused user
-sudo userdel -r username
+- Remove unused users and restrict privileges.
 
-# View sudo users
-getent group sudo
+### Delete unused user
+`sudo userdel -r username`
 
-
-Edit sudo access:
-
-sudo visudo
+### View sudo users
+`getent group sudo`
 
 
-✔ Apply least privilege
-✔ Avoid using root for daily tasks
+###Edit sudo access:
 
-3️⃣ Secure SSH Configuration
-
-Disable root login and enforce key-based authentication.
-
-sudo nano /etc/ssh/sshd_config
+`sudo visudo`
 
 
-Update the following:
+   ✔ Apply least privilege
+   ✔ Avoid using root for daily tasks
 
+## 3️⃣ Secure SSH Configuration
+
+- Disable root login and enforce key-based authentication.
+
+`sudo nano /etc/ssh/sshd_config`
+
+
+## Update the following:
+
+```
 PermitRootLogin no
 PasswordAuthentication no
 PubkeyAuthentication yes
+```
 
 
-Restart SSH:
+### Restart SSH:
 
-sudo systemctl restart ssh
+`sudo systemctl restart ssh`
 
 
 Why? Prevent brute-force and credential-based attacks.
