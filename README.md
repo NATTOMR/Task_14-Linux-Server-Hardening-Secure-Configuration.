@@ -84,8 +84,8 @@ Understand the system before making changes.
 `sudo visudo`
 
 
-   ✔ Apply least privilege
-   ✔ Avoid using root for daily tasks
+  - ✔ Apply least privilege
+  - ✔ Avoid using root for daily tasks
 
 ## 3️⃣ Secure SSH Configuration
 
