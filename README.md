@@ -1,4 +1,4 @@
-# Task 14: Linux Server Hardening & Secure Configuration
+# Linux Server Hardening & Secure Configuration
 
 ## 📌 Project Overview
 This project focuses on **hardening a Linux server** by applying security best practices to reduce attack surface, prevent unauthorized access, and protect system integrity.  
@@ -207,7 +207,7 @@ Compliance checks
 
  Performed security audit
 
-📄 Security Configuration Summary
+## 📄 Security Configuration Summary
 
 SSH hardened with key-based authentication
 
