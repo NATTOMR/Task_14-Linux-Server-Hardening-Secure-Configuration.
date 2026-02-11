@@ -182,7 +182,7 @@ PermitRootLogin no
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/ssh%20permission.png)
 
 ### Restart SSH:
 
