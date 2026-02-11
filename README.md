@@ -64,7 +64,7 @@ Understand the system before making changes.
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-2.png)
 ### List running services
 `systemctl list-units --type=service`
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-3.png)
 ### Check open ports
 `ss -tuln`
 ![image]()
