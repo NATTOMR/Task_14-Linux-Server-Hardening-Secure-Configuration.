@@ -59,6 +59,17 @@ Understand the system before making changes.
 ### Check OS version
 ` lsb_release -a`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-1.png)
+#### Result:
+
+- OS: Kali GNU/Linux Rolling
+
+- Release: 2025.4
+
+- Codename: kali-rolling
+
+- Purpose:
+    Verifying the OS version helps ensure proper patch management and vulnerability assessment. This establishes a secure baseline before applying hardening configurations.
+
 ### List users
 `cut -d: -f1 /etc/passwd`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-2.png)
