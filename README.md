@@ -1,10 +1,21 @@
-# Linux Server Hardening & Secure Configuration
+# 🔐 Linux Server Hardening & Secure Configuration
 
-## 📌 Project Overview
-This project focuses on **hardening a Linux server** by applying security best practices to reduce attack surface, prevent unauthorized access, and protect system integrity.  
-The implementation follows the **principle of least privilege**, secure service configuration, and continuous monitoring.
+![Linux](https://img.shields.io/badge/Platform-Linux-blue)
+![Security](https://img.shields.io/badge/Domain-System%20Hardening-red)
+![Firewall](https://img.shields.io/badge/Firewall-UFW-green)
+![SSH](https://img.shields.io/badge/SSH-Secured-brightgreen)
+![Audit](https://img.shields.io/badge/Security%20Audit-Lynis-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-The goal is to demonstrate practical Linux security skills commonly required in **system administration, SOC, and cybersecurity roles**.
+---
+
+## 📌 Project Summary
+
+This project demonstrates **practical Linux server hardening techniques** aligned with industry security standards such as **CIS Benchmarks** and the **NIST Cybersecurity Framework**.
+
+The objective was to reduce the system’s attack surface, enforce the principle of least privilege, secure remote access, configure firewall protections, and validate security posture using auditing tools.
+
+The implementation simulates real-world system administration and blue team security practices.
 
 ---
 
@@ -339,27 +350,27 @@ Goal: Prevent unauthorized file access.
 
 The following industry-recognized resources were used as guidance for implementing Linux server hardening best practices:
 
-1. CIS Benchmarks – Linux Security Standards
+1. CIS Benchmarks – Linux Security Standards <br>
 https://www.cisecurity.org/cis-benchmarks
 
 Industry-standard configuration benchmarks for secure system deployment.
 
-2. Ubuntu Security Documentation
+2. Ubuntu Security Documentation <br>
 https://ubuntu.com/security
 
 Official security guidance for package updates, patch management, and best practices.
 
-3. OpenSSH Official Documentation
+3. OpenSSH Official Documentation <br>
 https://man.openbsd.org/sshd_config
 
 Authoritative reference for SSH hardening and configuration options.
 
-4. Lynis Security Auditing Tool
+4. Lynis Security Auditing Tool <br>
 https://cisofy.com/lynis/
 
 Security auditing framework used to validate system hardening posture.
 
-5. NIST Cybersecurity Framework (CSF)
+5. NIST Cybersecurity Framework (CSF) <br>
 https://www.nist.gov/cyberframework
 
 Widely adopted framework for identifying, protecting, detecting, and responding to cyber threats.
