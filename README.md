@@ -58,15 +58,16 @@ Understand the system before making changes.
 ``bash
 ### Check OS version
 ` lsb_release -a`
-
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-1.png)
 ### List users
 `cut -d: -f1 /etc/passwd`
-
+![image]()
 ### List running services
 `systemctl list-units --type=service`
-
+![image]()
 ### Check open ports
 `ss -tuln`
+![image]()
 
 ## 2️⃣ User Account Hardening
 
