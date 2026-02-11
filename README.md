@@ -249,7 +249,7 @@ sudo dpkg-reconfigure unattended-upgrades
     sudo systemctl stop servicename
     <br>
 
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Disable%20Unnecessary%20Services-2.png)
 
 - ✔ Reduces attack surface
 - ✔ Improves system performance
