@@ -178,6 +178,7 @@ graph TD
 `sudo nano /etc/ssh/sshd_config`
 
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/user%20output-2.png)
+
 ## Update the following:
 
 ```
@@ -192,73 +193,72 @@ PubkeyAuthentication yes
 `sudo systemctl restart ssh`
 
 
-Why? Prevent brute-force and credential-based attacks.
-
-4️⃣ Update System & Enable Automatic Security Updates
+### 4️⃣ Update System & Enable Automatic Security Updates
+```
 sudo apt update && sudo apt upgrade -y
 sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure unattended-upgrades
+```
 
+    ✔ Keeps system patched
+    ✔ Reduces known vulnerabilities
 
-✔ Keeps system patched
-✔ Reduces known vulnerabilities
-
-5️⃣ Configure Firewall (UFW)
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw enable
-sudo ufw status verbose
+### 5️⃣ Configure Firewall (UFW)
+    sudo ufw default deny incoming
+    sudo ufw default allow outgoing
+    sudo ufw allow ssh
+    sudo ufw enable
+    sudo ufw status verbose
 
 
 Result: Only essential network traffic is allowed.
 
-6️⃣ Disable Unnecessary Services
-systemctl list-unit-files --type=service
+### 6️⃣ Disable Unnecessary Services
+    systemctl list-unit-files --type=service
 
 
-Disable unused services:
+### Disable unused services:
 
-sudo systemctl disable servicename
-sudo systemctl stop servicename
+    sudo systemctl disable servicename
+    sudo systemctl stop servicename
 
 
-✔ Reduces attack surface
-✔ Improves system performance
+- ✔ Reduces attack surface
+- ✔ Improves system performance
 
-7️⃣ Secure File Permissions
+### 7️⃣ Secure File Permissions
 
 Protect sensitive system files.
 
-# Secure shadow file
-sudo chmod 640 /etc/shadow
+### Secure shadow file
+    sudo chmod 640 /etc/shadow
 
-# Secure SSH directory
-chmod 700 ~/.ssh
-chmod 600 ~/.ssh/authorized_keys
+### Secure SSH directory
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/authorized_keys
 
 
 Goal: Prevent unauthorized file access.
 
-8️⃣ Log Monitoring & Auditing
-# View authentication logs
-sudo cat /var/log/auth.log
+### 8️⃣ Log Monitoring & Auditing
+- View authentication logs
+  `sudo cat /var/log/auth.log`
 
-# Check system logs
-sudo journalctl -xe
-
-
-(Optional) Install auditing tools:
-
-sudo apt install auditd -y
+### Check system logs
+`sudo journalctl -xe`
 
 
-✔ Detect suspicious activity
-✔ Improve incident response
+### (Optional) Install auditing tools:
 
-9️⃣ Security Auditing with Lynis
-sudo apt install lynis -y
-sudo lynis audit system
+    sudo apt install auditd -y
+
+
+- ✔ Detect suspicious activity
+- ✔ Improve incident response
+
+### 9️⃣ Security Auditing with Lynis
+    sudo apt install lynis -y
+    sudo lynis audit system
 
 
 Lynis provides:
@@ -269,27 +269,27 @@ Hardening recommendations
 
 Compliance checks
 
-✅ Linux Hardening Checklist
+## ✅ Linux Hardening Checklist
 
- Removed unused users
+    Removed unused users
 
- Restricted sudo access
+    Restricted sudo access
 
- Disabled root SSH login
+    Disabled root SSH login
 
- Enabled SSH key authentication
+    Enabled SSH key authentication
 
- Firewall configured (UFW)
+    Firewall configured (UFW)
 
- Disabled unused services
+    Disabled unused services
 
- Secured sensitive file permissions
+    Secured sensitive file permissions
 
- Enabled automatic updates
+    Enabled automatic updates
 
- Reviewed system logs
+    Reviewed system logs
 
- Performed security audit
+    Performed security audit
 
 ## 📄 Security Configuration Summary
 
