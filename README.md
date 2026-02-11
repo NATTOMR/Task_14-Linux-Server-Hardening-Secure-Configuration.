@@ -142,6 +142,48 @@ Limiting open ports significantly reduces network attack vectors and prevents un
 
 ## 3️⃣ Secure SSH Configuration
 
+### 🔐 Root vs Dev User – Privilege Diagram
+
+
+            ┌─────────────────────────────┐
+            │         LINUX SYSTEM        │
+            └─────────────────────────────┘
+                         ▲
+                         │
+           Full Control  │
+                         │
+                ┌─────────────────┐
+                │   ROOT USER     │
+                │   (UID 0)       │
+                └─────────────────┘
+                         │
+    ┌───────────────────────────────────────────┐
+    │ • Read/Write/Delete any file              │
+    │ • Modify system configurations            │
+    │ • Install/Remove software                 │
+    │ • Manage users & services                 │
+    │ • Change permissions                      │
+    │ • Access restricted directories           │
+    │ • No restrictions                         │
+    └───────────────────────────────────────────┘
+
+
+            Limited Access
+                  │
+                  ▼
+            ┌─────────────────┐
+            │    DEV USER     │
+            │   (UID ≥1000)   │
+            └─────────────────┘
+                  │
+    ┌───────────────────────────────────────────┐
+    │ • Access own home directory               │
+    │ • Run programs                            │
+    │ • Modify own files                        │
+    │ • Cannot modify system files              │
+    │ • Requires sudo for admin tasks           │
+    └───────────────────────────────────────────┘
+
 - Disable root login and enforce key-based authentication.
 
 `sudo nano /etc/ssh/sshd_config`
@@ -154,7 +196,7 @@ PermitRootLogin no
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
-
+![image]()
 
 ### Restart SSH:
 
