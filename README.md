@@ -73,9 +73,29 @@ Understand the system before making changes.
 ### List users
 `cut -d: -f1 /etc/passwd`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-2.png)
+
+#### Result:
+
+- Only system accounts and default service accounts were present.
+
+- No unnecessary or suspicious user accounts detected.
+
+- Purpose:
+   Reviewing user accounts ensures the system follows the principle of least privilege and reduces the risk of unauthorized access.
+
 ### List running services
 `systemctl list-units --type=service`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-3.png)
+
+#### Result:
+
+- Only system accounts and default service accounts were present.
+
+- No unnecessary or suspicious user accounts detected.
+
+- Purpose:
+Reviewing user accounts ensures the system follows the principle of least privilege and reduces the risk of unauthorized access.
+
 ### Check open ports
 `ss -tuln`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-4.png)
