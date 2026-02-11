@@ -119,6 +119,19 @@ Limiting open ports significantly reduces network attack vectors and prevents un
 
 ### View sudo users
 `getent group sudo`
+
+- Result:
+
+    - Only authorized users were members of the sudo group.
+
+- Purpose:
+
+  - Ensures limited administrative access
+
+  - Enforces the Principle of Least Privilege
+
+  - Reduces risk of privilege escalation
+    
 ### Edit sudo access:
 
 `sudo visudo`
