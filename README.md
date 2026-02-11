@@ -269,15 +269,15 @@ Auditing validates security posture
 
 This project demonstrates real-world Linux security hardening skills suitable for cybersecurity portfolios, SOC roles, and system administration.
 
-📚 References
+## 📚 References
 
-CIS Benchmarks
+- CIS Benchmarks
 
-Ubuntu Security Documentation
+- Ubuntu Security Documentation
 
-Lynis Auditing Guide
+- Lynis Auditing Guide
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Your Name
+NATTO MUNI CHAKMA
 Cybersecurity Enthusiast | Linux Security | SOC Analyst Path
