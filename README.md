@@ -199,9 +199,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure unattended-upgrades
 ```
-
-    ✔ Keeps system patched
-    ✔ Reduces known vulnerabilities
+- ✔ Keeps system patched
+- ✔ Reduces known vulnerabilities
 
 ### 5️⃣ Configure Firewall (UFW)
     sudo ufw default deny incoming
@@ -209,9 +208,14 @@ sudo dpkg-reconfigure unattended-upgrades
     sudo ufw allow ssh
     sudo ufw enable
     sudo ufw status verbose
+![image]()
+- Firewall is enabled
 
+- Logging is active (medium level)
 
-Result: Only essential network traffic is allowed.
+- Rules are enforced at boot
+  
+- Result: Only essential network traffic is allowed.
 
 ### 6️⃣ Disable Unnecessary Services
     systemctl list-unit-files --type=service
