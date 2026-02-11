@@ -288,7 +288,7 @@ Goal: Prevent unauthorized file access.
     sudo apt install lynis -y
     sudo lynis audit system
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Lynis-1.png)
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Lynis-2.png)
 ![image]()
 
 ### Install missing security packages:
