@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.png" alt="Linux Server Hardening & Secure Configuration Banner" width="100%">
+  <img src="images/banner.png" alt="Linux Server Hardening & Secure Configuration Banner" width="1200" height="350">
 </p>
 
 <h1 align="center">🔐 Linux Server Hardening & Secure Configuration</h1>
@@ -240,14 +240,16 @@ sudo dpkg-reconfigure unattended-upgrades
 - Result: Only essential network traffic is allowed.
 
 ### 6️⃣ Disable Unnecessary Services
-    systemctl list-unit-files --type=service
+    systemctl list-unit-files --type=service <br>
 
-
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Disable%20Unnecessary%20Services-1.png)
 ### Disable unused services:
 
     sudo systemctl disable servicename
     sudo systemctl stop servicename
+    <br>
 
+![image]()
 
 - ✔ Reduces attack surface
 - ✔ Improves system performance
