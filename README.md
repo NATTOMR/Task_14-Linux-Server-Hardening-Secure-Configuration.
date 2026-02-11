@@ -100,6 +100,16 @@ Reviewing user accounts ensures the system follows the principle of least privil
 `ss -tuln`
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-4.png)
 
+#### Result:
+
+- Only port 22 (SSH) was open.
+
+- No additional exposed services.
+
+- Purpose:
+Limiting open ports significantly reduces network attack vectors and prevents unauthorized remote access.
+
+
 ## 2️⃣ User Account Hardening
 
 - Remove unused users and restrict privileges.
