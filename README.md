@@ -118,7 +118,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
 `sudo userdel -r username`
 
 ### View sudo users
-`getent group sudo`
+`getent group sudo` <br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/user%20output-1.png)
 - Result:
 
@@ -140,7 +140,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
   - ✔ Apply least privilege
   - ✔ Avoid using root for daily tasks
 
-## 3️⃣ Secure SSH Configuration
+## 3️⃣ Secure SSH Configuration <br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/ssh%20configuration.png)
 ### 👥 User Privilege Hierarchy (Mermaid Diagram)
 
