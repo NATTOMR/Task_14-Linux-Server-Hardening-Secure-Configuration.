@@ -1,13 +1,22 @@
-# 🔐 Linux Server Hardening & Secure Configuration
+<p align="center">
+  <img src="images/banner.png" alt="Linux Server Hardening & Secure Configuration Banner" width="100%">
+</p>
 
-![Linux](https://img.shields.io/badge/Platform-Linux-blue)
-![Security](https://img.shields.io/badge/Domain-System%20Hardening-red)
-![Firewall](https://img.shields.io/badge/Firewall-UFW-green)
-![SSH](https://img.shields.io/badge/SSH-Secured-brightgreen)
-![Audit](https://img.shields.io/badge/Security%20Audit-Lynis-orange)
-![Status](https://img.shields.io/badge/Project-Completed-success)
+<h1 align="center">🔐 Linux Server Hardening & Secure Configuration</h1>
+
+<p align="center">
+  <b>System Security • SSH Hardening • Firewall Enforcement • Least Privilege • Security Auditing</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-Security-blue?style=for-the-badge&logo=linux">
+  <img src="https://img.shields.io/badge/Firewall-UFW-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/SSH-Hardened-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Audit-Lynis-red?style=for-the-badge">
+</p>
 
 ---
+
 
 ## 📌 Project Summary
 
@@ -30,9 +39,9 @@ The implementation simulates real-world system administration and blue team secu
 
 ## 🛠 Tools & Environment
 **Primary OS**
-- Ubuntu Server / Kali Linux
+- Kali Linux / Ubuntu Server
 
-**Security Tools**
+** Security Tools**
 - UFW (Firewall)
 - OpenSSH
 - Lynis (Security Auditing)
@@ -353,27 +362,18 @@ The following industry-recognized resources were used as guidance for implementi
 1. CIS Benchmarks – Linux Security Standards <br>
 https://www.cisecurity.org/cis-benchmarks
 
-Industry-standard configuration benchmarks for secure system deployment.
-
 2. Ubuntu Security Documentation <br>
 https://ubuntu.com/security
-
-Official security guidance for package updates, patch management, and best practices.
 
 3. OpenSSH Official Documentation <br>
 https://man.openbsd.org/sshd_config
 
-Authoritative reference for SSH hardening and configuration options.
-
 4. Lynis Security Auditing Tool <br>
 https://cisofy.com/lynis/
-
-Security auditing framework used to validate system hardening posture.
 
 5. NIST Cybersecurity Framework (CSF) <br>
 https://www.nist.gov/cyberframework
 
-Widely adopted framework for identifying, protecting, detecting, and responding to cyber threats.
 
 
 ## 👨‍💻 Author
