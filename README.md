@@ -154,6 +154,8 @@ graph TD
 
     KALI -- "sudo / su" --> ROOT
     DEV -- "sudo / su (if permitted)" --> ROOT
+
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/kali_root_dev_users.png)
 ```
 
 ## 👥 User Roles Summary
