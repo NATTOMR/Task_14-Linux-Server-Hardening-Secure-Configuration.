@@ -141,7 +141,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
   - ✔ Avoid using root for daily tasks
 
 ## 3️⃣ Secure SSH Configuration
-
+![image]()
 ### 👥 User Privilege Hierarchy (Mermaid Diagram)
 
 ```mermaid
@@ -174,7 +174,7 @@ graph TD
 
 `sudo nano /etc/ssh/sshd_config`
 
-
+![image]()
 ## Update the following:
 
 ```
