@@ -119,7 +119,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
 
 ### View sudo users
 `getent group sudo`
-
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/user%20output-1.png)
 - Result:
 
     - Only authorized users were members of the sudo group.
@@ -141,7 +141,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
   - ✔ Avoid using root for daily tasks
 
 ## 3️⃣ Secure SSH Configuration
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/ssh%20configuration.png)
 ### 👥 User Privilege Hierarchy (Mermaid Diagram)
 
 ```mermaid
@@ -174,7 +174,7 @@ graph TD
 
 `sudo nano /etc/ssh/sshd_config`
 
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/user%20output-2.png)
 ## Update the following:
 
 ```
