@@ -119,9 +119,7 @@ Limiting open ports significantly reduces network attack vectors and prevents un
 
 ### View sudo users
 `getent group sudo`
-
-
-###Edit sudo access:
+### Edit sudo access:
 
 `sudo visudo`
 
