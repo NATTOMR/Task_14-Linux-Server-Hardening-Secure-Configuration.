@@ -67,7 +67,7 @@ Understand the system before making changes.
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-3.png)
 ### Check open ports
 `ss -tuln`
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-4.png)
 
 ## 2️⃣ User Account Hardening
 
