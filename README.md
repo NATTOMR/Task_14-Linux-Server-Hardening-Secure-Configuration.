@@ -28,7 +28,7 @@ The implementation simulates real-world system administration and blue team secu
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Contents
 - Secure a Linux system against common attacks
 - Minimize exposed services and open ports
 - Enforce strong authentication and access control
@@ -289,7 +289,7 @@ Goal: Prevent unauthorized file access.
     sudo lynis audit system
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Lynis-1.png)
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Lynis-2.png)
-![image]()
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/Lynis-3.png)
 
 ### Install missing security packages:
 
