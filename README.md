@@ -57,7 +57,7 @@ Understand the system before making changes.
 
 ``bash
 ### Check OS version
-` lsb_release -a`
+` lsb_release -a` <br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-1.png)
 #### Result:
 
@@ -71,7 +71,7 @@ Understand the system before making changes.
     Verifying the OS version helps ensure proper patch management and vulnerability assessment. This establishes a secure baseline before applying hardening configurations.
 
 ### List users
-`cut -d: -f1 /etc/passwd`
+`cut -d: -f1 /etc/passwd`<br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-2.png)
 
 #### Result:
@@ -84,7 +84,7 @@ Understand the system before making changes.
    Reviewing user accounts ensures the system follows the principle of least privilege and reduces the risk of unauthorized access.
 
 ### List running services
-`systemctl list-units --type=service`
+`systemctl list-units --type=service`<br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-3.png)
 
 #### Result:
@@ -97,7 +97,7 @@ Understand the system before making changes.
 Reviewing user accounts ensures the system follows the principle of least privilege and reduces the risk of unauthorized access.
 
 ### Check open ports
-`ss -tuln`
+`ss -tuln`<br>
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/os%20output-4.png)
 
 #### Result:
@@ -155,8 +155,8 @@ graph TD
     KALI -- "sudo / su" --> ROOT
     DEV -- "sudo / su (if permitted)" --> ROOT
 
-
 ```
+
 ![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/kali_root_dev_users.png)
 
 ## 👥 User Roles Summary
@@ -337,11 +337,33 @@ Goal: Prevent unauthorized file access.
 
 ## 📚 References
 
-- CIS Benchmarks
+The following industry-recognized resources were used as guidance for implementing Linux server hardening best practices:
 
-- Ubuntu Security Documentation
+1. CIS Benchmarks – Linux Security Standards
+https://www.cisecurity.org/cis-benchmarks
 
-- Lynis Auditing Guide
+Industry-standard configuration benchmarks for secure system deployment.
+
+2. Ubuntu Security Documentation
+https://ubuntu.com/security
+
+Official security guidance for package updates, patch management, and best practices.
+
+3. OpenSSH Official Documentation
+https://man.openbsd.org/sshd_config
+
+Authoritative reference for SSH hardening and configuration options.
+
+4. Lynis Security Auditing Tool
+https://cisofy.com/lynis/
+
+Security auditing framework used to validate system hardening posture.
+
+5. NIST Cybersecurity Framework (CSF)
+https://www.nist.gov/cyberframework
+
+Widely adopted framework for identifying, protecting, detecting, and responding to cyber threats.
+
 
 ## 👨‍💻 Author
 
