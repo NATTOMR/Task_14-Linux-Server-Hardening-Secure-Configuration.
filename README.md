@@ -196,6 +196,17 @@ graph TD
     │ • Cannot modify system files              │
     │ • Requires sudo for admin tasks           │
     └───────────────────────────────────────────┘
+## 👥 User Roles Summary
+
+| Feature | Root User | Kali User | Dev User |
+|----------|------------|------------|------------|
+| UID | 0 | ≥1000 | ≥1000 |
+| Purpose | Full system administration | Default daily user | Custom regular user |
+| System Control | Full access | Limited | Limited |
+| Can Use sudo | Not required | Yes | Only if granted |
+| Modify System Files | Yes | With sudo | With sudo (if allowed) |
+| Safe for Daily Use | No | Yes | Yes |
+| Risk if Compromised | Critical | Medium | Medium |
 
     ```
 
