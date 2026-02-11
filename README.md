@@ -184,6 +184,48 @@ Limiting open ports significantly reduces network attack vectors and prevents un
     │ • Requires sudo for admin tasks           │
     └───────────────────────────────────────────┘
 
+    ```
+    ## 👥 User Privilege Hierarchy Diagram
+
+                     ┌────────────────────────────┐
+                     │          ROOT USER         │
+                     │           (UID 0)          │
+                     │   Full Administrative      │
+                     │   Control Over System      │
+                     └────────────────────────────┘
+                               ▲
+                               │
+              Privilege Escalation (sudo / su)
+                               │
+    ┌──────────────────────────┴──────────────────────────┐
+    │                                                     │
+┌────────────────────────────┐ ┌────────────────────────────┐
+│ KALI USER │ │ DEV USER │
+│ Default Regular Account │ │ Custom Regular Account │
+│ (UID ≥ 1000) │ │ (UID ≥ 1000) │
+│ │ │ │
+│ • Daily system usage │ │ • Limited permissions │
+│ • Can use sudo │ │ • Needs sudo for admin │
+│ • Safer than root login │ │ • Follows least privilege │
+└────────────────────────────┘ └────────────────────────────┘
+
+## 👥 User Privilege Hierarchy (Mermaid Diagram)
+
+```mermaid
+graph TD
+
+    ROOT["👑 Root User (UID 0)<br/>Full System Control"]
+
+    KALI["👤 Kali User<br/>(Default Regular User)<br/>UID ≥ 1000"]
+    DEV["👨‍💻 Dev User<br/>(Custom Regular User)<br/>UID ≥ 1000"]
+
+    KALI -- "sudo / su" --> ROOT
+    DEV -- "sudo / su (if permitted)" --> ROOT
+
+```
+
+    ```
+
 - Disable root login and enforce key-based authentication.
 
 `sudo nano /etc/ssh/sshd_config`
