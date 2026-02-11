@@ -208,7 +208,9 @@ sudo dpkg-reconfigure unattended-upgrades
     sudo ufw allow ssh
     sudo ufw enable
     sudo ufw status verbose
-![image]()
+    
+![image](https://github.com/NATTOMR/Task_14-Linux-Server-Hardening-Secure-Configuration./blob/main/images/configure%20UFW.png)<br>
+
 - Firewall is enabled
 
 - Logging is active (medium level)
