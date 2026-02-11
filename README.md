@@ -265,16 +265,40 @@ Goal: Prevent unauthorized file access.
 ### 9️⃣ Security Auditing with Lynis
     sudo apt install lynis -y
     sudo lynis audit system
+![image]()
+![image]()
+![image]()
+
+### Install missing security packages:
+
+`sudo apt install fail2ban apt-listbugs apt-listchanges needrestart`
 
 
-Lynis provides:
 
-Security score
+#### Consider:
 
-Hardening recommendations
+- Enable intrusion detection
 
-Compliance checks
+- Enable bootloader password
 
+- Install malware scanning tools
+
+- Reduce unnecessary running services
+
+- Customize /etc/lynis/default.prf
+
+
+### Results:
+
+ - Hardening Index: 64/100
+
+ - 273 tests performed
+
+ - Firewall detected
+
+ - Intrusion detection installed
+
+  - Malware scanner installed
 ## ✅ Linux Hardening Checklist
 
     Removed unused users
@@ -299,25 +323,17 @@ Compliance checks
 
 ## 📄 Security Configuration Summary
 
-SSH hardened with key-based authentication
+    SSH hardened with key-based authentication
 
-Firewall restricts inbound connections
+    Firewall restricts inbound connections
 
-System is auto-patched for vulnerabilities
+    System is auto-patched for vulnerabilities
 
-Least privilege enforced
+    Least privilege enforced
 
-Logs monitored for anomalies
+    Logs monitored for anomalies
 
-Auditing validates security posture
-
-🏁 Final Outcome
-
-✔ Hardened Linux system
-✔ Reduced attack surface
-✔ Improved resilience against brute-force, privilege escalation, and misconfiguration attacks
-
-This project demonstrates real-world Linux security hardening skills suitable for cybersecurity portfolios, SOC roles, and system administration.
+    Auditing validates security posture
 
 ## 📚 References
 
@@ -329,5 +345,5 @@ This project demonstrates real-world Linux security hardening skills suitable fo
 
 ## 👨‍💻 Author
 
-NATTO MUNI CHAKMA
-Cybersecurity Enthusiast | Linux Security | SOC Analyst Path
+NATTO MUNI CHAKMA <br>
+Cybersecurity Enthusiast | Linux Security | SOC Analyst & Blue team learner
